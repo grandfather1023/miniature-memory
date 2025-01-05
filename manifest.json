@@ -1,0 +1,125 @@
+{
+  "id": "com.adobe.cclibrariespanel",
+  "name": "CC Libraries Panel",
+  "version": "3.19.237",
+  "main": "./main.js",
+  "manifestVersion": 4,
+  "hosts": [
+    {
+      "app": "AI",
+      "minVersion": "24.2",
+      "entrypoints": [
+        {
+          "type": "panel",
+          "id": "ccLibrariesPanel",
+          "label": "$$$/ccLibrariesPanel/DefaultPanelTitle=Libraries"
+        }
+      ]
+    },
+    {
+      "app": "XD",
+      "minVersion": "45.0.0",
+      "entrypoints": [
+        {
+          "type": "panel",
+          "id": "ccLibrariesPanel",
+          "label": "$$$/ccLibrariesPanel/DefaultPanelTitle=Libraries"
+        },
+        {
+          "type": "panel",
+          "id": "ccLibrariesManager",
+          "label": "$$$/ccLibrariesManager/DefaultPanelTitle=CC Libraries Manager"
+        }
+      ]
+    },
+    {
+      "app": "PS",
+      "minVersion": "22.5.0",
+      "entrypoints": [
+        {
+          "type": "panel",
+          "id": "ccLibrariesPanel",
+          "label": "$$$/ccLibrariesPanel/DefaultPanelTitle=Libraries",
+          "minimumSize": {
+            "width": 245,
+            "height": 165
+          },
+          "maximumSize": {
+            "width": 7680,
+            "height": 7680
+          },
+          "preferredDockedSize": {
+            "width": 245,
+            "height": 300
+          },
+          "preferredFloatingSize": {
+            "width": 245,
+            "height": 300
+          }
+        },
+        {
+          "type": "command",
+          "id": "adobeStockLicensingPlugin",
+          "label": "$$$/stockLicensePanel/DefaultPanelTitle=Stock"
+        },
+        {
+          "type": "command",
+          "id": "ccLibrariesManager",
+          "label": "$$$/ccLibrariesManager/DefaultPanelTitle=CC Libraries Manager"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "width": 23,
+      "height": 23,
+      "path": "images/IconDark.png",
+      "theme": [
+        "darkest",
+        "dark"
+      ],
+      "scale": [
+        1,
+        2
+      ]
+    },
+    {
+      "width": 23,
+      "height": 23,
+      "path": "images/IconLight.png",
+      "theme": [
+        "lightest",
+        "light"
+      ],
+      "scale": [
+        1,
+        2
+      ]
+    }
+  ],
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "ccLibrariesPanel",
+      "label": "$$$/ccLibrariesPanel/DefaultPanelTitle=Libraries",
+      "minimumSize": {
+        "width": 245,
+        "height": 165
+      },
+      "maximumSize": {
+        "width": 7680,
+        "height": 7680
+      },
+      "preferredDockedSize": {
+        "width": 245,
+        "height": 300
+      },
+      "preferredFloatingSize": {
+        "width": 245,
+        "height": 300
+      }
+    }
+  ],
+  "description": "CAPTURE: 2.0.34  STOCK: 4.0.2"
+}
